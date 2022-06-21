@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jsレッスン</title>
+</head>
+<body>
+<script>
+  window.onload=()=>{
+    const ageDom=document.getElementById("itAge");
+    const resultDom=document.getElementById("result");
+    const btn=document.getElementById("btn");
+    btn.addEventListener("click",()=>{
+      let age=ageDom.value;
+      age=parseInt(age);
+      let str;
+      if(age >=20){
+        str="おとな";
+      }else{
+        str="こども";
+      }
+      resultDom.textContent=str;
+
+    });
+
+  };
+
+    
+    </script>
+<input type="text" id="itAge" value="" placeholder="Enter your age">
+<button id="btn">Check!</button>
+<div id="result"></div>
+<script>
+    /*function btCheck(){
+        let age=document.getElementById("itAge").value
+        age=parseInt(age);
+        let str;
+        if(age >= 20){
+            str='おとな';
+        }else{
+            str='こども';
+        }
+        document.getElementById("result").textContent=str;
+    }
+    */
+   /*const btCheck=function(){*/
+    /*const ageDom=document.getElementById("itAge")
+    const resultDom=document.getElementById("result")
+    const btCheck=()=>{
+        let age=ageDom.value;
+        age=parseInt(age);
+        let str;
+        if(age >= 20){
+            str='おとな';
+        }else{
+            str='こども';
+        }
+        resultDom.textContent=str;
+    };*/
+</script>
+</body>
+</body>
+</html>
